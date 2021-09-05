@@ -10,6 +10,23 @@ body {
     font-weight: 500;
  }
 
+.shadow{
+    text-shadow: 0 0 5px #000000;
+}
+
+
+/* CUSTOMIZE NAVBAR
+-------------------------------------------------- */
+
+.dropdown-header{
+    color: #7a7a7a;
+    font-weight: 700;
+}
+
+.language-flag{
+    height: 1rem;
+    margin-left: 1rem;
+}
 
 /* CUSTOMIZE INTRODUCTION
 -------------------------------------------------- */
@@ -77,6 +94,15 @@ body {
     letter-spacing: -.05rem;
 }
 
+.featurette img{
+    width: 100%;
+}
+
+/* Footer
+------------------------- */
+footer{
+    text-align: center;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
