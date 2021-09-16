@@ -1,0 +1,29 @@
+{
+  "name": "liz-yoga-static-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "fragments src/en dist/en; fragments src/sp dist/sp; cp src/index.css dist/index.css; cp -R src/assets dist/assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dusanzahoransky/liz-yoga-static-web.git"
+  },
+  "keywords": [
+    "liz",
+    "static",
+    "web",
+    "yoga",
+    "classes"
+  ],
+  "author": "Dusan Zahoransky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dusanzahoransky/liz-yoga-static-web/issues"
+  },
+  "homepage": "https://github.com/dusanzahoransky/liz-yoga-static-web#readme",
+  "dependencies": {
+    "html-fragments": "^1.1.1"
+  }
+}
