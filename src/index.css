@@ -10,8 +10,9 @@ body {
     font-weight: 500;
  }
 
-.shadow{
-    text-shadow: 0 0 5px #000000;
+h1, h2, h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -60,6 +61,12 @@ body {
 .carousel-caption {
     z-index: 10;
     padding: 0;
+    text-shadow: 0 0 7px #000000;
+    max-width: 50%;
+}
+
+.carousel-caption a {
+    text-shadow: none;
 }
 
 /* MARKETING CONTENT
@@ -77,8 +84,6 @@ body {
     margin-right: .75rem;
     margin-left: .75rem;
 }
-
-
 
 /* Featurettes
 ------------------------- */
@@ -115,14 +120,17 @@ footer{
         line-height: 1.4;
     }
 
+    h2 {
+        font-size: 24px;
+    }
     .featurette-heading {
-        font-size: 50px;
+        font-size: 36px;
     }
 }
 
 @media (min-width: 62em) {
     .featurette-heading {
-        margin-top: 7rem;
+        margin-top: 3rem;
     }
 }
 

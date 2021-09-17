@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "fragments src/en dist/en; fragments src/sp dist/sp; cp src/index.css dist/index.css; cp -R src/assets dist/assets"
+    "build": "fragments src/en dist/en; fragments src/sp dist/sp; cp src/index.css dist/index.css; cp -R src/assets dist/assets",
+    "deploy-dry": "aws s3 sync dist s3://liz-yoga-static-web --dryrun --acl public-read --profile dusan",
+    "deploy": "aws s3 sync dist s3://liz-yoga-static-web --acl public-read --profile dusan",
+    "publish": "npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",
