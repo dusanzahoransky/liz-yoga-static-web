@@ -62,7 +62,30 @@ h1, h2, h3{
     z-index: 10;
     padding: 0;
     text-shadow: 0 0 7px #000000;
-    max-width: 50%;
+}
+
+.carousel-caption.first-slide{
+    text-align: left;
+    bottom: unset;
+    top: 1rem;
+}
+
+@media (min-width: 40em) {
+    .carousel-caption.first-slide {
+        max-width: 50%;
+    }
+}
+
+.carousel-caption.third-slide{
+    text-align: right;
+    bottom: unset;
+    top: 1rem;
+}
+
+.carousel-caption.second-slide{
+    bottom: unset;
+    top: 1rem;
+    text-align: left;
 }
 
 .carousel-caption a {
