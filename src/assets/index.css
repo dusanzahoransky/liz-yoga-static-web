@@ -51,6 +51,9 @@ a {
 .carousel{
     margin-bottom: 4rem;
 }
+.carousel.no-margin{
+    margin-bottom: 0;
+}
 
 .carousel picture{
     display: block;
@@ -115,6 +118,9 @@ a {
 .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
+.featurette-divider-narrow {
+    margin: 2rem 0;
+}
 
 /* Thin out the marketing headings */
 .featurette-heading {
@@ -156,6 +162,9 @@ footer{
 
     h2 {
         font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
     }
     .featurette-heading {
         font-size: 36px;
