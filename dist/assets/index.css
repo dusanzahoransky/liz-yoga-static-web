@@ -133,6 +133,11 @@ a {
     margin-top: 2rem;
 }
 
+.details img{
+    width: 100%;
+    aspect-ratio: unset;
+}
+
 
 /* Footer */
 footer{
