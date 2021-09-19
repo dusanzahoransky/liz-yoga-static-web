@@ -1,5 +1,4 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
+/* GLOBAL STYLES */
 /* Padding below the footer and lighter body text */
 
 body {
@@ -19,8 +18,7 @@ a {
     color: blue;
 }
 
-/* CUSTOMIZE NAVBAR
--------------------------------------------------- */
+/* CUSTOMIZE NAVBAR */
 
 .dropdown-header{
     color: #7a7a7a;
@@ -36,8 +34,7 @@ a {
     margin-left: 1rem;
 }
 
-/* CUSTOMIZE INTRODUCTION
--------------------------------------------------- */
+/* CUSTOMIZE INTRODUCTION */
 
 .introduction{
     text-align: center;
@@ -47,8 +44,7 @@ a {
     margin-bottom: 4rem;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+/* CUSTOMIZE THE CAROUSEL */
 
 /* default large screens */
 
@@ -99,8 +95,7 @@ a {
     text-shadow: none;
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* MARKETING CONTENT */
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-6 {
@@ -115,8 +110,7 @@ a {
     margin-left: .75rem;
 }
 
-/* Featurettes
-------------------------- */
+/* Featurettes */
 
 .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -134,14 +128,23 @@ a {
     aspect-ratio: unset;
 }
 
-/* Footer
-------------------------- */
+/* Detail page */
+.container.details{
+    margin-top: 2rem;
+}
+
+.details img{
+    width: 100%;
+    aspect-ratio: unset;
+}
+
+
+/* Footer */
 footer{
     text-align: center;
 }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+/* RESPONSIVE CSS */
 
 @media (min-width: 40em) {
     /* Bump up size of carousel content */
