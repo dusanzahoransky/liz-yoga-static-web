@@ -3,6 +3,7 @@
 
 body {
     color: #5a5a5a;
+    line-height: 2rem;
 }
 
 .lead{
@@ -16,6 +17,10 @@ h1, h2, h3{
 
 a {
     color: blue;
+}
+
+.text-justify{
+    text-align: justify;
 }
 
 /* CUSTOMIZE NAVBAR */
@@ -142,6 +147,25 @@ a {
 .details img{
     width: 100%;
     aspect-ratio: unset;
+}
+
+div.class-description{
+    margin-bottom: 3rem;
+}
+
+.class-description-col-left{
+   padding-right: 2rem;
+}
+
+.class-description-col-right{
+   padding-left: 2rem;
+}
+
+ul.class-preparation-list{
+    padding-inline-start: 1rem;
+}
+.class-preparation-list li{
+    margin-top: 1rem;
 }
 
 
