@@ -15,10 +15,6 @@ h1, h2, h3{
     margin-bottom: 1rem;
 }
 
-a {
-    color: blue;
-}
-
 .text-justify{
     text-align: justify;
 }
@@ -27,14 +23,14 @@ a {
 }
 
 /* CUSTOMIZE NAVBAR */
-
-.dropdown-header{
-    color: #7a7a7a;
-    font-weight: 700;
+.dropdown-item{
+    color: #9931c9;
 }
-
-.navbar-light .navbar-nav .nav-link{
-    color: rgba(0,0,0,.7);
+.navbar-primary .navbar-nav .nav-link {
+    color: #9931c9;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: #9931c9;
 }
 
 .language-flag{
@@ -75,7 +71,8 @@ a {
 .carousel-caption {
     z-index: 10;
     padding: 0;
-    text-shadow: 0 0 7px #000000;
+    font-weight: bolder;
+    text-shadow: 0 0 2px #000000;
 }
 
 .carousel-caption.first-slide{
@@ -124,10 +121,12 @@ a {
 /* Featurettes */
 
 .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem 0;
+    color: #9931c9;
 }
 .featurette-divider-narrow {
     margin: 2rem 0;
+    color: #9931c9;
 }
 
 /* Thin out the marketing headings */

@@ -2,16 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Yoga con Liz Neira. Clases en línea privadas, grupales, posturas de Yoga y classes privadas al aire libre">
     <meta name="author" content="Liz Neira Ramirez">
     <link rel="icon" href="../assets/favicon.ico">
 
-    <title>Yoga con Liz Neira</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../assets/custom-theme.css" rel="stylesheet">
     <link href="../assets/index.css" rel="stylesheet">
+
+    <title>Yoga con Liz Neira</title>
 </head>
 
 <!-- NAVBAR
@@ -19,40 +20,43 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Sobre mí</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-classes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yoga classes</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown-classes">
-                        <p class="dropdown-header">Clases online</p>
-                        <a class="dropdown-item" href="private.html">Clases privadas online</a>
-                        <a class="dropdown-item" href="small-group.html">Classes grupales online</a>
-                        <a class="dropdown-item" href="poses.html">Posturas de Yoga online</a>
-                        <p class="dropdown-header">En persona</p>
-                        <a class="dropdown-item" href="private-in-person.html">Privadas en persona</a>
-                        <a class="dropdown-item" href="mall-group-in-person.html">Classes grupales en persona</a>
-                        <a class="dropdown-item" href="poses-in-person.html">Posturas de Yoga en persona</a>
-                    </div>
-                </li>
-            </ul>
-<!--            <ul class="navbar-nav ml-auto">-->
-<!--                <li class="nav-item dropdown language-selector">-->
-<!--                    <a class="nav-link dropdown-toggle" href="index.html" id="dropdown-languages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                        es<img class="language-flag" src="../assets/spain_flag.png" alt="es flag icon"/></a>-->
-<!--                    <div class="dropdown-menu" aria-labelledby="dropdown-languages">-->
-<!--                        <a class="dropdown-item" href="../en/index.html">-->
-<!--                            en<img class="language-flag" src="../assets/uk_flag.png" alt="uk flag icon"/>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--            </ul>-->
+    <nav class="navbar navbar-expand-md navbar-light navbar-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="classes-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Yoga classes</a>
+                        <ul class="dropdown-menu" aria-labelledby="classes-dropdown">
+                            <li><p class="dropdown-header">Clases online</p></li>
+                            <li><a class="dropdown-item" href="private.html">Clases privadas online</a></li>
+                            <li><a class="dropdown-item" href="small-group.html">Classes grupales online</a></li>
+                            <li><a class="dropdown-item" href="poses.html">Posturas de Yoga online</a></li>
+                            <li><p class="dropdown-header">En persona</p></li>
+                            <li><a class="dropdown-item" href="private-in-person.html">Privadas en persona</a></li>
+                            <li><a class="dropdown-item" href="mall-group-in-person.html">Classes grupales en persona</a></li>
+                            <li><a class="dropdown-item" href="poses-in-person.html">Posturas de Yoga en persona</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    <!--            <ul class="navbar-nav ml-auto">-->
+    <!--                <li class="nav-item dropdown language-selector">-->
+    <!--                    <a class="nav-link dropdown-toggle" href="index.html" id="dropdown-languages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+    <!--                        es<img class="language-flag" src="../assets/spain_flag.png" alt="es flag icon"/></a>-->
+    <!--                    <div class="dropdown-menu" aria-labelledby="dropdown-languages">-->
+    <!--                        <a class="dropdown-item" href="../en/index.html">-->
+    <!--                            en<img class="language-flag" src="../assets/uk_flag.png" alt="uk flag icon"/>-->
+    <!--                        </a>-->
+    <!--                    </div>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+            </div>
         </div>
     </nav>
 </header>
@@ -61,59 +65,73 @@
 
     <!-- START THE CAROUSEL -->
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <picture class="first-slide">
+                <picture>
                     <source srcset="../assets/cover-1-portrait-progressive.jpeg" media="(max-width: 800px) and (orientation: portrait)">
                     <img src="../assets/cover-1-large-progressive.jpeg" alt="Private classes" class="first-slide"/>
                 </picture>
 
                 <div class="container">
                     <div class="carousel-caption first-slide">
-                        <h1>CLASES PRIVADAS</h1>
+                        <h1>CLASES PRIVADAS ONLINE</h1>
                         <p>Clases de Hatha Yoga dinamicas privadas solo para ti, podrás elegir entre nivel principiante o intermedio, también tendrás la opción de trabajar alguna postura en especifico que quieras practicar.</p>
-                        <p><a class="btn btn-lg btn-light" href="private.html">Clases privadas detalles</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="private.html">Clases privadas detalles</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <picture class="second-slide">
-                    <source srcset="../assets/cover-2-portrait-progressive.jpeg" media="(max-width: 800px) and (orientation: portrait)">
-                    <img src="../assets/cover-2-large-progressive.jpeg" alt="Private classes" class="second-slide"/>
-                </picture>
-
-                <div class="container">
-                    <div class="carousel-caption second-slide">
-                        <h1>CLASES GRUPALES</h1>
-                        <p>Clases de Hatha Yoga dinamicas para grupos pequeños nivel principiante a intermedio.</p>
-                        <p><a class="btn btn-lg btn-light" href="small-group.html">Clases grupales detalles</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <picture class="third-slide">
+                <picture>
                     <source srcset="../assets/cover-3-portrait-progressive.jpeg" media="(max-width: 800px) and (orientation: portrait)">
                     <img src="../assets/cover-3-large-progressive.jpeg" alt="Private classes" class="third-slide"/>
                 </picture>
 
                 <div class="container">
                     <div class="carousel-caption third-slide">
-                        <h1>POSTURAS DE YOGA</h1>
+                        <h1>CLASES PRIVADAS EN PERSON</h1>
                         <p>Posturas de yoga.</p>
-                        <p><a class="btn btn-lg btn-light" href="poses.html">Posturas de yoga detalles</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="poses.html">Posturas de yoga detalles</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source srcset="../assets/cover-2-portrait-progressive.jpeg" media="(max-width: 800px) and (orientation: portrait)">
+                    <img src="../assets/cover-2-large-progressive.jpeg" alt="Private classes" class="second-slide"/>
+                </picture>
+
+                <div class="container">
+                    <div class="carousel-caption second-slide">
+                        <h1>CLASES GRUPALES ONLINE</h1>
+                        <p>Clases de Hatha Yoga dinamicas para grupos pequeños nivel principiante a intermedio.</p>
+                        <p><a class="btn btn-lg btn-primary" href="small-group.html">Clases grupales detalles</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source srcset="../assets/cover-2-portrait-progressive.jpeg" media="(max-width: 800px) and (orientation: portrait)">
+                    <img src="../assets/cover-2-large-progressive.jpeg" alt="Private classes" class="second-slide"/>
+                </picture>
+
+                <div class="container">
+                    <div class="carousel-caption second-slide">
+                        <h1>CLASES GRUPALES EN PERSON</h1>
+                        <p>Clases de Hatha Yoga dinamicas para grupos pequeños nivel principiante a intermedio.</p>
+                        <p><a class="btn btn-lg btn-primary" href="small-group.html">Clases grupales detalles</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!-- /END THE CAROUSEL -->
@@ -147,14 +165,15 @@
                 <p class="text-justify">Aquí podrás encontrar clases cortas y muy variadas de Hatha Yoga nivel principiante e intermedio.</p>
                 <p class="text-justify">Aprenderás a tener una respiración consciente, a mover tu cuerpo y relajar tu mente a través de diferentes asanas/posturas y meditación.</p>
                 <p class="text-justify">Juntos aprenderemos a descubrir y practicar este mundo maravilloso del YOGA.</p>
-                <p><a class="btn btn-light" href="https://www.youtube.com/channel/UC20D0ArlDwjfLkpaW07pGKw/featured" target="_blank" rel="noopener noreferrer">Sígueme en Youtube &raquo;</a></p>
+                <p><a class="btn btn-outline-primary" href="https://www.youtube.com/channel/UC20D0ArlDwjfLkpaW07pGKw/featured" target="_blank" rel="noopener noreferrer">Sígueme en Youtube &raquo;</a></p>
             </div>
             <div class="col-lg-6">
                 <img class="rounded-circle" src="../assets/instagram-logo-progressive.jpeg" alt="Instagram profile logo" width="140" height="140">
                 <h2>SÍGUEME EN INSTAGRAM</h2>
                 <p class="text-justify">Aquí podrás encontrar mucho más de mi vida cotidiana con fotos y videos inspirados en diferentes posturas de yoga, secuencias, retos y como inspiro a las personas a mover el cuerpo y tranquilizar la mente.</p>
                 <p class="text-justify">Es un espacio más cercano para interactuar con aquellos que quieren explorar y conocer mucho más de cerca esta fantástica disciplina. Namaste.</p>
-                <p><a class="btn btn-light" href="https://instagram.com/lizneirar" target="_blank" rel="noopener noreferrer">Sígueme en Instagram &raquo;</a></p>
+                <br/>
+                <p><a class="btn btn-outline-primary" href="https://instagram.com/lizneirar" target="_blank" rel="noopener noreferrer">Sígueme en Instagram &raquo;</a></p>
             </div>
         </div>
 
@@ -234,9 +253,7 @@
 
 </main>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
