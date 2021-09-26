@@ -22,6 +22,10 @@ h1, h2, h3{
     text-align: left;
 }
 
+.rem-2{
+    margin-bottom: 2rem;
+}
+
 /* CUSTOMIZE NAVBAR */
 .dropdown-item{
     color: #9931c9;
