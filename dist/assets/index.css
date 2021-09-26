@@ -22,6 +22,9 @@ a {
 .text-justify{
     text-align: justify;
 }
+.text-left{
+    text-align: left;
+}
 
 /* CUSTOMIZE NAVBAR */
 
