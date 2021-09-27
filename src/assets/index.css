@@ -36,6 +36,12 @@ h1, h2, h3{
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
     color: #9931c9;
 }
+button[aria-expanded]{
+    color: #9931c9 !important;
+}
+.navbar-toggler .collapsed{
+    color: #9931c9 !important;
+}
 
 .language-flag{
     height: 1rem;
@@ -71,12 +77,16 @@ h1, h2, h3{
     width: 100%;
 }
 
+.carousel-heading{
+    font-size: 3rem;
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
     padding: 0;
     font-weight: bolder;
-    text-shadow: 0 0 2px #000000;
+    text-shadow: 0 0 3px #000000;
 }
 
 .carousel-caption.first-slide{
