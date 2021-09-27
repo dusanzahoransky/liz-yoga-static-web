@@ -77,10 +77,6 @@ button[aria-expanded]{
     width: 100%;
 }
 
-.carousel-heading{
-    font-size: 3rem;
-}
-
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
