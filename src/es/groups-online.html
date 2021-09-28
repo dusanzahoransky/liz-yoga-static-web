@@ -18,19 +18,18 @@
 <include src="_partial_header.html"/>
 
 <main role="main">
-
     <!-- START ONLINE CLASS  -->
     <div class="container details">
 
         <div class="row class-description">
             <div class="col-md-7">
                 <h1 class="details-heading">CLASES GRUPALES ONLINE</h1>
-                <p class="text-justify">Aquí encontrarás clases de Hatha Yoga dinamicas para grupos pequeños nivel principiante a intermedio, son clases de 45 a 50 minutos en donde me aseguraré que los participantes avancen en la practica, corrigiendo posturas y explicando en detalle cada una de las asanas/posturas, finalizaremos con una meditación corta para terminar de relajar el cuerpo y la mente.</p>
+                <p class="text-justify">Aquí encontrarás clases de Hatha Yoga dinámicas para grupos pequeños nivel principiante a intermedio, son clases de 45 a 50 minutos en donde me aseguraré que los participantes avancen en la práctica, corrigiendo posturas y explicando en detalle cada una de las asanas/posturas, finalizaremos con una meditación corta para terminar de relajar el cuerpo y la mente.</p>
                 <h3>CLASES GRUPALES ONLINE</h3>
                 <p>Serán grupos de hasta máximo 15 personas.</p>
                 <h3>HORARIO</h3>
-                <p>Lunes y Miercoles 6 P.M. </p>
-                <p>Lunes y Miercoles 7 P.M. </p>
+                <p>Lunes y Miércoles 6 P.M. </p>
+                <p>Lunes y Miércoles 7 P.M. </p>
                 <p>Martes y Jueves 7 P.M. </p>
                 <h3>PRECIO (Pago anticipado para separar tu cupo)</h3>
                 <p>$15 AUD - 1 Clase a la Semana.</p>
@@ -90,29 +89,29 @@
             <div class="col-md-1"></div>
 
             <div class="col-md-4">
-                <h2>Contact me</h2>
-                <form action="mailto:test@test.com?subject=Poses class enquiry" method="post" enctype="text/plain">
+                <h2>Contáctame</h2>
+                <form>
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" name="Name" id="name" aria-describedby="emailHelp" placeholder="Your name">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Tu nombre">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" name="Email" id="email" aria-describedby="emailHelp" placeholder="Your email">
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Tu email">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail3">Mobile</label>
-                        <input type="text" class="form-control" name="Mobile" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Your mobile">
+                        <label class="required" for="mobile">Celular</label>
+                        <input type="text" class="form-control" name="mobile" id="mobile" required aria-describedby="mobileHelp" placeholder="Tu número de Celular">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail4">Preferred time</label>
-                        <input type="text" class="form-control" name="Preferred time" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="Preferred time of the class">
+                        <label for="preferredTime">Horario Preferido</label>
+                        <input type="text" class="form-control" name="preferredTime" id="preferredTime" aria-describedby="preferredTimeHelp" placeholder="Hora preferida de clase">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Enquiry about the posses class</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Your question or booking enquiry"></textarea>
+                        <label class="required" for="enquiry">Pregunta sobre la Clase</label>
+                        <textarea class="form-control" name="enquiry" id="enquiry" required  rows="6" placeholder="Tu pregunta o consulta de reserva"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Contact me via e-mail</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>
@@ -125,6 +124,14 @@
     <include src="_partial_footer.html"/>
 
 </main>
+
+<script type="module">
+    import EnquiryService from "../js/EnquiryService.js";
+    const enquiryService = new EnquiryService();
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => enquiryService.handleEnquirySubmit(event));
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

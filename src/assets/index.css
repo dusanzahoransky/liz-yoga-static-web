@@ -213,3 +213,12 @@ footer{
     }
 }
 
+
+/* form */
+*:required:invalid, *:focus:invalid {
+    border: 1px solid;
+}
+
+label.required{
+    font-weight: 600;
+}
