@@ -1,6 +1,6 @@
 export default class EnquiryService {
 
-    async handleEnquirySubmit(event) {
+    async handleEnquirySubmit(yogaClass, event) {
         event.preventDefault()
 
         const formData = new FormData(event.target)
@@ -15,9 +15,10 @@ export default class EnquiryService {
         }
     }
 
-    async postEnquiry(enquiry) {
-        const enquiryPath = 'https://uc2iohbbzc.execute-api.ap-southeast-2.amazonaws.com/prod/';
+    async postEnquiry(yogaClass, enquiry) {
+        enquiry.yogaClass = yogaClass
 
+        const enquiryPath = 'https://uc2iohbbzc.execute-api.ap-southeast-2.amazonaws.com/prod/';
         const body = JSON.stringify(enquiry);
         console.log(`Calling POST ${enquiryPath}: ${body}`)
 

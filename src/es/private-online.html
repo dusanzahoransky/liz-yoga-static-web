@@ -89,29 +89,29 @@
             <div class="col-md-1"></div>
 
             <div class="col-md-4">
-                <h2>Contact me</h2>
-                <form action="mailto:test@test.com?subject=Clases privadas enquiry" method="post" enctype="text/plain">
+                <h2>Contáctame</h2>
+                <form>
                     <div class="form-group">
-                        <label for="contactForm1Name">Name</label>
-                        <input type="text" id="contactForm1Name" class="form-control" name="Name" aria-describedby="nameHelp" placeholder="Your name">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Tu nombre">
                     </div>
                     <div class="form-group">
-                        <label for="contactForm1Email">Email</label>
-                        <input type="email" id="contactForm1Email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Your email">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Tu email">
                     </div>
                     <div class="form-group">
-                        <label for="contactForm1Mobile">Mobile</label>
-                        <input type="text" id="contactForm1Mobile" class="form-control" name="Mobile" aria-describedby="mobileHelp" placeholder="Your mobile">
+                        <label class="required" for="mobile">Celular</label>
+                        <input type="text" class="form-control" name="mobile" id="mobile" required aria-describedby="mobileHelp" placeholder="Tu número de Celular">
                     </div>
                     <div class="form-group">
-                        <label for="contactForm1Preferred">Preferred time</label>
-                        <input type="text" class="form-control" id="contactForm1Preferred" name="Preferred time" aria-describedby="preferredTimeHelp" placeholder="Preferred time of the class">
+                        <label for="preferredTime">Horario Preferido</label>
+                        <input type="text" class="form-control" name="preferredTime" id="preferredTime" aria-describedby="preferredTimeHelp" placeholder="Hora preferida de clase">
                     </div>
                     <div class="form-group">
-                        <label for="contactForm1Enquiry">Enquiry about the posses class</label>
-                        <textarea class="form-control" id="contactForm1Enquiry" rows="6" placeholder="Your question or booking enquiry"></textarea>
+                        <label class="required" for="enquiry">Pregunta sobre la Clase</label>
+                        <textarea class="form-control" name="enquiry" id="enquiry" required  rows="6" placeholder="Tu pregunta o consulta de reserva"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Contact me via e-mail</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>
@@ -124,6 +124,15 @@
     <include src="_partial_footer.html"/>
 
 </main>
+
+<script type="module">
+    import EnquiryService from "../js/EnquiryService.js";
+    const enquiryService = new EnquiryService();
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => enquiryService.handleEnquirySubmit('private-online', event));
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
