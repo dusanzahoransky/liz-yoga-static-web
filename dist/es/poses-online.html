@@ -80,13 +80,33 @@
                     <!-- Indicators -->
                        <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <picture class="first-slide">
-                                <img src="../assets/poses-1-portrait.jpeg" alt="The first pose" class="first-slide"/>
+                            <picture>
+                                <img src="../assets/poses-1-portrait.jpeg" alt="Yoga pose picture"/>
                             </picture>
                         </div>
                         <div class="carousel-item">
-                            <picture class="second-slide">
-                                <img src="../assets/poses-2-portrait.jpg" alt="The second pose" class="second-slide"/>
+                            <picture>
+                                <img src="../assets/poses-2-portrait.jpg" alt="Yoga pose picture"/>
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <img src="../assets/poses-3-portrait.jpg" alt="Yoga pose picture"/>
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <img src="../assets/poses-4-portrait.jpg" alt="Yoga pose picture"/>
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <img src="../assets/poses-5-portrait.jpg" alt="Yoga pose picture"/>
+                            </picture>
+                        </div>
+                        <div class="carousel-item">
+                            <picture>
+                                <img src="../assets/poses-6-portrait.jpg" alt="Yoga pose picture"/>
                             </picture>
                         </div>
                     </div>
@@ -131,28 +151,28 @@
 
             <div class="col-md-4">
                 <h2>Contáctame</h2>
-                <form action="mailto:test@test.com?subject=Poses class enquiry" method="post" enctype="text/plain">
+                <form>
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input type="text" class="form-control" name="Name" id="name" aria-describedby="emailHelp" placeholder="Tu nombre">
+                        <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Tu nombre">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" name="Email" id="email" aria-describedby="emailHelp" placeholder="Tu email">
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Tu email">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail3">Celular</label>
-                        <input type="text" class="form-control" name="Mobile" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Tu número de Celular">
+                        <label class="required" for="mobile">Celular</label>
+                        <input type="text" class="form-control" name="mobile" id="mobile" required aria-describedby="mobileHelp" placeholder="Tu número de Celular">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail4">Horario Preferido</label>
-                        <input type="text" class="form-control" name="Preferred time" id="exampleInputEmail4" aria-describedby="emailHelp" placeholder="Hora preferida de clase">
+                        <label for="preferredTime">Horario Preferido</label>
+                        <input type="text" class="form-control" name="preferredTime" id="preferredTime" aria-describedby="preferredTimeHelp" placeholder="Hora preferida de clase">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Pregunta sobre la Clase</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Tu pregunta o consulta de reserva"></textarea>
+                        <label class="required" for="enquiry">Pregunta sobre la Clase</label>
+                        <textarea class="form-control" name="enquiry" id="enquiry" required  rows="6" placeholder="Tu pregunta o consulta de reserva"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Contact me via e-mail</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>
@@ -183,6 +203,14 @@
 </footer>
 
 </main>
+
+<script type="module">
+    import EnquiryService from "../js/EnquiryService.js";
+    const enquiryService = new EnquiryService();
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => enquiryService.handleEnquirySubmit('poses-online', event));
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
