@@ -11,7 +11,7 @@ export default class EnquiryService {
         } else if (!data.enquiry) {
             return alert('Please fill up your enquiry.')
         } else {
-            await this.postEnquiry(data)
+            await this.postEnquiry(yogaClass, data)
         }
     }
 
