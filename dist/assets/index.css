@@ -115,40 +115,44 @@ button[aria-expanded]{
 
 /* MARKETING CONTENT */
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-6 {
-    margin-bottom: 1.5rem;
-    text-align: center;
+.video-container {
+    overflow: hidden;
+    position: relative;
 }
-.marketing h2 {
-    font-weight: 400;
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
 }
-.marketing .col-lg-6 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
+
+
+.instagram-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+.instagram-container iframe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
 }
 
 /* Featurettes */
 
-.featurette-divider {
+.divider {
     margin: 5rem 0;
     color: #9931c9;
 }
-.featurette-divider-narrow {
+.divider-narrow {
     margin: 2rem 0;
     color: #9931c9;
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
-
-.featurette img{
-    width: 100%;
-    aspect-ratio: unset;
 }
 
 /* Detail page */
@@ -159,18 +163,6 @@ button[aria-expanded]{
 .details img{
     width: 100%;
     aspect-ratio: unset;
-}
-
-div.class-description{
-    margin-bottom: 3rem;
-}
-
-.class-description-col-left{
-   padding-right: 2rem;
-}
-
-.class-description-col-right{
-   padding-left: 2rem;
 }
 
 ul.class-preparation-list{
@@ -221,4 +213,8 @@ footer{
 
 label.required{
     font-weight: 600;
+}
+
+.form-group{
+    margin-bottom: 1rem;
 }

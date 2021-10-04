@@ -12,6 +12,9 @@ export default class EnquiryService {
             return alert('Please fill up your enquiry.')
         } else {
             await this.postEnquiry(yogaClass, data)
+            const form = document.querySelector('form')
+            form.reset()
+            return alert('Thank you for your enquiry, I will be in touch with you soon!')
         }
     }
 
@@ -36,7 +39,6 @@ export default class EnquiryService {
             return alert('Failed to send you enquiry, please try again later.')
         }
         console.log(`RESPONSE: ${response.status}: ${await response.json()}`)
-        return alert('Thank you for your enquiry, I will be in touch with you soon!')
     }
 
 }
