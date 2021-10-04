@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist/* && fragments src/en dist/en && fragments src/es dist/es && cp -R src/assets dist && cp -R src/js dist",
-    "deploy-dry": "aws s3 sync dist s3://liz-yoga-static-web --dryrun --acl public-read --profile dusan",
-    "deploy": "aws s3 sync dist s3://liz-yoga-static-web --acl public-read --profile dusan",
-    "cleanup": "aws s3 sync dist s3://liz-yoga-static-web --delete --profile dusan",
+    "build": "rm -rf dist/* && fragments src/en dist/en && fragments src/es dist/es && cp -R src/assets dist && cp -R src/js dist && cp -R src/redirect.html dist",
+    "deploy-dry": "aws s3 sync dist s3://lizneira.com --dryrun --profile dusan",
+    "deploy": "aws s3 sync dist s3://lizneira.com --profile dusan",
+    "cleanup": "aws s3 sync dist s3://lizneira.com --delete --profile dusan",
     "publish": "npm run build && npm run deploy"
   },
   "repository": {
