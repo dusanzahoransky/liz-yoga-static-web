@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist/* && fragments src/en dist/en && fragments src/es dist/es && cp -R src/assets dist && cp -R src/js dist && cp -R src/redirect.html dist",
+    "clear-dist": "rm -rf dist/*",
+    "generate-html": "fragments src/en dist/en && fragments src/es dist/es",
+    "copy-resource": "cp -R src/assets dist && cp -R src/js dist && cp src/* dist",
+    "build": "npm run clear-dist && npm run generate-html && npm run copy-resource",
     "deploy-dry": "aws s3 sync dist s3://lizneira.com --dryrun --profile dusan",
     "deploy": "aws s3 sync dist s3://lizneira.com --profile dusan",
     "cleanup": "aws s3 sync dist s3://lizneira.com --delete --profile dusan",
