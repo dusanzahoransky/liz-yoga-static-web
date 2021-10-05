@@ -6,7 +6,7 @@
   "scripts": {
     "clear-dist": "rm -rf dist/*",
     "generate-html": "fragments src/en dist/en && fragments src/es dist/es",
-    "copy-resource": "cp -R src/assets dist && cp -R src/js dist && cp src/redirect.html dist && cp src/sitemap.xml dist",
+    "copy-resource": "cp -R src/assets dist && cp -R src/js dist && cp src/redirect*.html dist && cp src/sitemap.xml dist",
     "build": "npm run clear-dist && npm run generate-html && npm run copy-resource",
     "deploy-dry": "aws s3 sync dist s3://lizneira.com --dryrun --profile dusan",
     "deploy": "npm run build && aws s3 sync dist s3://lizneira.com --profile dusan",

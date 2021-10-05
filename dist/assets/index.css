@@ -147,6 +147,10 @@ button[aria-expanded]{
     margin: 2rem 0;
     color: #9931c9;
 }
+.divider-no-margin {
+    margin: 0;
+    color: #9931c9;
+}
 
 /* Detail page */
 .container.details{
