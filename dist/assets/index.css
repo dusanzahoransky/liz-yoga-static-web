@@ -116,7 +116,7 @@ button[aria-expanded]{
     .video-container iframe {
         min-height: 12em;
     }
-    .text-justify{
+    p, h1, h2, h3, h4, h5, h6{
         padding: 0 0.75rem 0 0.75rem;
     }
 }
