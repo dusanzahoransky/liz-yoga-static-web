@@ -89,35 +89,21 @@ button[aria-expanded]{
     z-index: 10;
     padding: 0;
     font-weight: bolder;
-    text-shadow: 0 0 3px #000000;
+    color: #5a5a5a;
+    text-shadow: 0 0 2px white;
 }
 
-.carousel-caption.first-slide{
+.carousel-caption{
     text-align: left;
     bottom: unset;
     top: 1rem;
 }
 
 @media (min-width: 40em) {
-    .carousel-caption.first-slide {
-        max-width: 50%;
+    .carousel-caption {
+        bottom: unset;
+        top: 3rem;
     }
-}
-
-.carousel-caption.third-slide{
-    text-align: right;
-    bottom: unset;
-    top: 1rem;
-}
-
-.carousel-caption.second-slide{
-    bottom: unset;
-    top: 1rem;
-    text-align: left;
-}
-
-.carousel-caption a {
-    text-shadow: none;
 }
 
 /* MARKETING CONTENT */
