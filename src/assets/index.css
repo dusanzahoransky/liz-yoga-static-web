@@ -90,19 +90,19 @@ button[aria-expanded]{
     padding: 0;
     font-weight: bolder;
     color: #5a5a5a;
-    text-shadow: 0 0 2px white;
-}
-
-.carousel-caption{
+    text-shadow: 0 0 4px white;
     text-align: left;
     bottom: unset;
-    top: 1rem;
+    top: 3rem;
 }
 
-@media (min-width: 40em) {
+@media (max-width: 60em) {
     .carousel-caption {
         bottom: unset;
-        top: 3rem;
+        top: 0;
+    }
+    .carousel-heading{
+        font-size: 1.5rem;
     }
 }
 
@@ -114,9 +114,6 @@ button[aria-expanded]{
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     padding-left: 1rem;
