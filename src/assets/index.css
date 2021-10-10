@@ -94,6 +94,16 @@ button[aria-expanded]{
     top: 1rem;
 }
 
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption.light {
+    z-index: 10;
+    padding: 0;
+    font-weight: bolder;
+    color: floralwhite;
+    text-shadow: 0 0 4px #5a5a5a;
+    top: 1rem;
+}
+
 @media (max-width: 800px) {
     .carousel-caption{
         top: 0.5rem;
