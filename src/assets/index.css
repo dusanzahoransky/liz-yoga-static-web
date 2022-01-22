@@ -2,7 +2,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    color: #5a5a5a;
+    color: black;
     line-height: 2rem;
 }
 
@@ -89,7 +89,7 @@ button[aria-expanded]{
     z-index: 10;
     padding: 0;
     font-weight: bolder;
-    color: #5a5a5a;
+    color: black;
     text-shadow: 0 0 4px white;
     top: 1rem;
 }
@@ -100,7 +100,7 @@ button[aria-expanded]{
     padding: 0;
     font-weight: bolder;
     color: floralwhite;
-    text-shadow: 0 0 4px #5a5a5a;
+    text-shadow: 0 0 4px black;
     top: 1rem;
 }
 
@@ -176,6 +176,16 @@ button[aria-expanded]{
 /* Detail page */
 .container.details{
     margin-top: 2rem;
+}
+
+.details-heading{
+    background-color: rgba(153, 49, 201, 0.6);
+    text-shadow: 0 0 1px black;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    margin-top: 0;
 }
 
 .details img{
